@@ -17,7 +17,7 @@ export function MaterialPage() {
   );
 
   return (
-    <section className="catalog shell" style={{ paddingTop: "20px" }}>
+    <section className="catalog shell" style={{ paddingBlock: "35px 70px" }}>
       <div className="section-heading">
         <div>
           <div className="eyebrow">KENALI RONGSOKANMU</div>

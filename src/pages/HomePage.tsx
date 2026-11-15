@@ -206,8 +206,8 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="estimate-section shell" style={{ marginBottom: "70px" }}>
-        <div className="estimate-layout" style={{ gridTemplateColumns: "1fr auto" }}>
+      <section className="estimate-section" style={{ marginBlock: "40px 60px" }}>
+        <div className="shell estimate-layout" style={{ gridTemplateColumns: "1fr auto" }}>
           <div className="estimate-copy" style={{ maxWidth: "580px" }}>
             <div className="eyebrow">SIMULATOR NILAI JUAL</div>
             <h2>

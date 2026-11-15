@@ -62,8 +62,8 @@ export function KontakFaqPage() {
   ];
 
   return (
-    <div className="shell" style={{ paddingTop: "20px", paddingBottom: "70px" }}>
-      <section className="contact-section" style={{ border: "none", padding: 0 }}>
+    <div style={{ paddingBlock: "35px 65px" }}>
+      <section className="contact-section shell" style={{ marginBottom: "65px" }}>
         <div className="contact-copy">
           <div className="eyebrow">KAMI BANTU CEK RONGSOKANMU</div>
           <h2>
@@ -111,7 +111,7 @@ export function KontakFaqPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="faq-section" style={{ marginTop: "70px", paddingTop: "50px", borderTop: "1px solid #e7ebd9" }}>
+      <section className="faq-section shell">
         <div>
           <div className="eyebrow">SEBELUM MENGHUBUNGI</div>
           <h2>
@@ -119,7 +119,7 @@ export function KontakFaqPage() {
             <br />
             <span>sering diajukan.</span>
           </h2>
-          <p style={{ fontSize: "13px", color: "#6a7b57", marginTop: "12px", lineHeight: "1.7" }}>
+          <p style={{ fontSize: "12px", color: "#81916f", marginTop: "14px", lineHeight: "1.8", maxWidth: "340px" }}>
             Pelajari jawaban seputar syarat rongsokan, estimasi harga, penjemputan armada, dan sistem pembayaran kami.
           </p>
         </div>

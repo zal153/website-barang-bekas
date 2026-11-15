@@ -70,8 +70,8 @@ export function CaraJualPage() {
   ];
 
   return (
-    <div className="shell" style={{ paddingTop: "20px", paddingBottom: "70px" }}>
-      <section className="how-section" style={{ border: "none", padding: 0 }}>
+    <div style={{ paddingBottom: "75px" }}>
+      <section className="how-section shell" style={{ paddingTop: "35px" }}>
         <div className="section-heading">
           <div>
             <div className="eyebrow">RUMAH LEBIH LEGA, MATERIAL LEBIH BERGUNA</div>
