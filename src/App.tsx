@@ -5,9 +5,14 @@ import { MaterialCard } from "./components/MaterialCard";
 import type { IconName, Material } from "./types";
 import { money } from "./utils/format";
 
-const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+const publicAsset = (path: string) => {
+  const base = import.meta.env.BASE_URL || "/";
+  const normalizedBase = base.endsWith("/") ? base : `${base}/`;
+  const normalizedPath = path.startsWith("/") ? path.slice(1) : path;
+  return `${normalizedBase}${normalizedPath}`;
+};
 const localImg = (filename: string) => publicAsset(`img/${filename}`);
-const businessIcon = publicAsset("icon/WhatsApp Image 2026-11-10 at 08.36.07.jpeg");
+const businessIcon = publicAsset("icon/logo.jpeg");
 // Hero image: pakai foto terbaik besi/komponen (IMG_0049)
 const heroImg = localImg("IMG_0049.jpg");
 const materials: Material[] = [

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Icon } from "./Icon";
 import type { Material } from "../types";
 import { money } from "../utils/format";
@@ -8,6 +9,8 @@ type MaterialCardProps = {
 };
 
 export function MaterialCard({ material, onSelect }: MaterialCardProps) {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <article className="material-card">
       <button
@@ -15,11 +18,12 @@ export function MaterialCard({ material, onSelect }: MaterialCardProps) {
         onClick={() => onSelect(material)}
         aria-label={`Detail ${material.name}`}
       >
-        {material.image ? (
+        {material.image && !imageError ? (
           <img
             src={material.image}
             alt={material.name + " untuk dipilah dan didaur ulang"}
             loading="lazy"
+            onError={() => setImageError(true)}
           />
         ) : (
           <div className="material-art">
